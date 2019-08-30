@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWidget</class>
+ <widget class="QWidget" name="mainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>791</width>
+    <height>622</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>5</number>
+   </property>
+   <property name="topMargin">
+    <number>5</number>
+   </property>
+   <property name="rightMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="ButtonGroup" name="buttonGroup" native="true"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="filewg" name="myfiles"/>
+     <widget class="sharelist" name="sharefile"/>
+     <widget class="ranklist" name="rankerlist"/>
+     <widget class="transfer" name="transfer"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ButtonGroup</class>
+   <extends>QWidget</extends>
+   <header>buttongroup.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>filewg</class>
+   <extends>QWidget</extends>
+   <header location="global">filewg.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>transfer</class>
+   <extends>QWidget</extends>
+   <header location="global">transfer.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ranklist</class>
+   <extends>QWidget</extends>
+   <header location="global">ranklist.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>sharelist</class>
+   <extends>QWidget</extends>
+   <header location="global">sharelist.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
